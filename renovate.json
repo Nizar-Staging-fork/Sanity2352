@@ -1,40 +1,6 @@
 {
-		"prHourlyLimit": 10,
-		"extends": [
-			"github>whitesource/merge-confidence:beta"
-		],
-		"dependencyDashboard": true,
-		"packageRules": [
-			{
-				"groupName": "high mcw - patch minor",
-				"matchConfidence": [
-					"high",
-					"very high"
-				],
-				"matchUpdateTypes": [
-					"minor",
-					"patch"
-				]
-			},
-			{
-				"groupName": "high mcw - major",
-				"matchConfidence": [
-					"high",
-					"very high"
-				],
-				"matchUpdateTypes": [
-					"major"
-				]
-			},
-			{
-				"dependencyDashboardApproval": true,
-				"matchConfidence": [
-					"neutral",
-					"low"
-				],
-				"commitMessagePrefix": "rnv: [suppressed] "
-			}
-			]
-			}
-		
-	
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ]
+}
